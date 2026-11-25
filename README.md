@@ -1,5 +1,7 @@
 # Online Food Delivery Preferences – Bangalore (Swiggy)
 
+**Group project (3 students).** A joint exploratory data analysis for a university course; the analysis and the notebook are shared work of the team.
+
 <div dir="rtl">
 
 **תקציר:** פרויקט קבוצתי בניתוח נתונים: ניתוח סקר של 388 לקוחות אפליקציות משלוחי אוכל באזור בנגלור (הודו) במחברת Jupyter. בדקנו מה משפיע על שביעות הרצון של הלקוחות, מי מזמין חטיפים ובאיזה אמצעי מזמינים, והצגנו את הממצאים בגרפים ובמפה.
@@ -38,6 +40,16 @@ All numbers are from the notebook outputs.
 - **App users** say the main advantages are time saving and an easy payment option, and the main drawback is long delivery time.
 
 ![Average overall rating by age](docs/age_vs_overall_rating.png)
+
+*Average overall satisfaction rating by respondent age: the score falls from 3.58 at age 18 to below 3.0 at age 33 (correlation −0.59).*
+
+## What I'd do next
+
+- Weight or resample the responses, since the survey covers 388 people in one region and is not a representative sample of all users.
+- Test the age effect at the respondent level with a regression that controls for income, occupation and family size, instead of correlating per-age averages.
+- Group the 24 satisfaction items into a few factors (for example delivery, payment, food quality) with factor analysis or PCA, and check the internal consistency of the overall score.
+- Model the "would order again" answer with a simple classifier to see which factors predict churn.
+- Turn the main charts and the map into a small interactive dashboard.
 
 ## Repository structure
 
