@@ -10,7 +10,7 @@
 
 ## Overview
 
-An exploratory data analysis project done as a team of three students for a university course. We analysed the public Kaggle survey [*Online Food Delivery Preferences – Bangalore region*](https://www.kaggle.com/datasets/benroshan/online-food-delivery-preferencesbangalore-region): 388 respondents and 55 columns covering demographics, location, how and what they order, and how they rate factors such as delivery time, payment, food quality and order mistakes. The notebook converts the survey answers to numbers, builds an overall satisfaction score, and explores three questions about customer satisfaction, snack orders and the preferred ordering channel, with Swiggy, an Indian food delivery app, as the example business. The notebook text is in Hebrew.
+An exploratory data analysis project done as a team of three students for a university course. We analysed the public Kaggle survey [*Online Food Delivery Preferences – Bangalore region*](https://www.kaggle.com/datasets/benroshan/online-food-delivery-preferencesbangalore-region): 388 respondents and 55 columns covering demographics, location, how and what they order, and how they rate factors such as delivery time, payment, food quality and order mistakes. The notebook converts the survey answers to numbers, builds an overall satisfaction score, and explores three questions about customer satisfaction, snack orders and the preferred ordering channel, with Swiggy, an Indian food delivery app, as the example business. The notebook commentary is in Hebrew, with an English introduction and summary of findings.
 
 ## What was done
 
@@ -43,16 +43,15 @@ All numbers are from the notebook outputs.
 
 | File | Description |
 |---|---|
-| `1.ipynb` | The full analysis notebook (Hebrew text, charts and map) |
+| [`food_delivery_survey_eda.ipynb`](food_delivery_survey_eda.ipynb) | The full analysis notebook (Hebrew commentary, English intro and summary, charts and map) |
 | `onlinedeliverydata.csv` | The survey dataset from Kaggle (388 rows) |
-| `*.jpg`, `*.webp` | Illustration images shown in the notebook |
 | `docs/age_vs_overall_rating.png` | Chart from the notebook |
 
 ## How to run
 
 ```bash
 pip install pandas numpy matplotlib seaborn scipy plotly folium scikit-learn jupyter
-jupyter notebook 1.ipynb
+jupyter notebook food_delivery_survey_eda.ipynb
 ```
 
-The notebook reads the CSV from this repository on GitHub, so it needs an internet connection. To run it offline, change the `url` in the loading cells to the local file `onlinedeliverydata.csv`.
+Run it from the repository folder: the notebook loads the local `onlinedeliverydata.csv`, and falls back to the [raw copy on GitHub](https://raw.githubusercontent.com/roeiraz12/swiggy-delivery-survey-eda/main/onlinedeliverydata.csv) if the file is not found.
